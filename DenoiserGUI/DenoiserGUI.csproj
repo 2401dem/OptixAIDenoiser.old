@@ -90,5 +90,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OptixAIDenoiser\OptixAIDenoiser.vcxproj">
+      <Project>{8c669601-d41f-498b-916d-cc4977a03ff5}</Project>
+      <Name>OptixAIDenoiser</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

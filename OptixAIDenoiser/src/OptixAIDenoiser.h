@@ -6,9 +6,6 @@
 #include "IL/il.h"
 #include "IL/ilu.h"
 
-#define TINYEXR_IMPLEMENTATION
-#include "tinyexr.h"
-
 #pragma once
 #define OAD_API __declspec(dllexport) 
 
@@ -19,14 +16,9 @@ BYTE sdata[4096 * 4096 * 4];
 float exrdata[4096 * 4096 * 4];
 float exrimages[4][4096 * 4096 * 4];
 
-
 ILuint inputImage;
 ILuint outputImage;
 bool running = false;
-
-EXRHeader exrheader;
-
-EXRImage exrimage;
 
 optix::Context optix_context;
 optix::Buffer input_buffer;
